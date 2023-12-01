@@ -4,7 +4,9 @@ from sys import stderr
 def debug(*args, **kwargs):
     print(*args, **kwargs, file=stderr)
 
-cookie = ## Add your session cookie here :)
+cookie = None
+with open("aoc.py", "r") as cookie_file:
+    cookie = cookie_file.read()
 
 def submit(value, level=1, year=None, day=None):
     """
