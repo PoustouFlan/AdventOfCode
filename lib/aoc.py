@@ -1,12 +1,19 @@
 import requests
+import os.path
 from datetime import date
 from sys import stderr
+
 def debug(*args, **kwargs):
     print(*args, **kwargs, file=stderr)
 
+## Retrive session cookie
+path = os.path.abspath(os.path.dirname(__file__))
+cookie_path = os.path.join(path, "cookie.txt")
+
 cookie = None
-with open("aoc.py", "r") as cookie_file:
-    cookie = cookie_file.read()
+with open(cookie_path, "r") as cookie_file:
+    cookie = cookie_file.read().strip()
+
 
 def submit(value, level=1, year=None, day=None):
     """
@@ -20,7 +27,11 @@ def submit(value, level=1, year=None, day=None):
 
     submit_url = f"https://adventofcode.com/{year}/day/{day}/answer"
     debug("Submitting to", submit_url, "...")
-    r = requests.post(submit_url, {"level": level, "answer": value}, cookies={"cookie":cookie})
+    payload = {
+        "level": level,
+        "answer": value,
+    }
+    r = requests.post(submit_url, payload, cookies={"cookie":cookie})
     debug(r.status_code)
     debug(r.text)
     return r.status_code == 200
