@@ -1,6 +1,6 @@
 ### Automated Input Retrieval/Submission
 
-**You need to proved your adventofcode.com session cookie in the
+**You need to provide your adventofcode.com session cookie in the
 `lib/cookie.txt` file !**
 
 Check online [how to retrieve your session cookie](https://support.pentest-tools.com/en/scans-tools/how-to-get-the-session-cookie)
