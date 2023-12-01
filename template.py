@@ -1,5 +1,5 @@
 import sys
-sys.path.insert(0, "/home/poustouflan/CP/AdventOfCode/lib")
+sys.path.insert(0, "../../lib")
 from aoc import submit
 
 res = 0
