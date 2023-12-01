@@ -33,4 +33,4 @@ while not done:
         ## Fin de l'entrée
         done = True
 
-submit(res)
+submit(res, 2)
