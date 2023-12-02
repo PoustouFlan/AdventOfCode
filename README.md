@@ -28,7 +28,7 @@ will default on today's challenge.
 I also have a Vim (my code editor) macro setup to run my code with the
 `input.txt` file as standard input:
 ```vim
-autocmd filetype python nnoremap <F5> :!python % < input.txt<CR>
+autocmd filetype python nnoremap <F5> :w<bar>!python % < input.txt<CR>
 ```
 
 ### My Solutions
