@@ -28,4 +28,4 @@ while not done:
         ## Fin de l'entrée
         done = True
 
-submit(res)
+submit(res, 1, 1, 2023)

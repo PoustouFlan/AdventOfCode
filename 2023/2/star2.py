@@ -36,4 +36,4 @@ while not done:
     except EOFError:
         done = True
 
-submit(result, 2)
+submit(result, 2, 2, 2023)
