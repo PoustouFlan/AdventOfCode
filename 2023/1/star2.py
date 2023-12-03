@@ -3,34 +3,38 @@ sys.path.insert(0, "../../lib")
 from aoc import submit
 
 done = False
-digits = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
-res = 0
+digits = [
+    'zero', 'one', 'two', 'three', 'four',
+    'five', 'six', 'seven', 'eight', 'nine'
+]
+result = 0
 while not done:
     try:
         line = input()
-        n = ''
+        number = ''
 
-        ## Lecture du premier chiffre
-        while len(n) == 0:
-            for x in range(10):
-                if line[0] == str(x) or line.startswith(digits[x]):
-                    n += str(x)
+        ## Reading first digit
+        while len(number) == 0:
+            for i in range(10):
+                if line[0] == str(i) or line.startswith(digits[i]):
+                    number += str(i)
                     break
             else:
                 line = line[1:]
 
-        ## Lecture du dernier chiffre
-        while len(n) == 1:
-            for x in range(10):
-                if line[-1] == str(x) or line.endswith(digits[x]):
-                    n += str(x)
+        ## Reading last digit
+        while len(number) == 1:
+            for i in range(10):
+                if line[-1] == str(i) or line.endswith(digits[i]):
+                    number += str(i)
                     break
             else:
                 line = line[:-1]
-        res += int(n)
+
+        result += int(number)
 
     except EOFError:
-        ## Fin de l'entrée
+        ## End of input
         done = True
 
-submit(res, 2, 1, 2023)
+submit(result, 2, 1, 2023)
