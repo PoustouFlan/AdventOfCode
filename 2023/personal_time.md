@@ -1,0 +1,42 @@
+<table>
+    <tr>
+        <th></th>
+        <th colspan="3">Part 1 </th>
+        <th colspan="3">Part 2 </th>
+    </tr>
+    <tr>
+        <th>Day</th>
+            <th>Time</th> <th>Rank</th> <th>Score</th>
+            <th>Time</th> <th>Rank</th> <th>Score</th>
+    </tr>
+    <tr>
+        <th>1</th>
+            <th>00:01:57</th> <th>186</th> <th>0</th>
+            <th>00:06:19</th> <th>67</th> <th>34</th>
+    </tr>
+    <tr>
+        <th>2</th>
+            <th>00:03:08</th> <th>31</th> <th>70</th>
+            <th>00:04:45</th> <th>27</th> <th>74</th>
+    </tr>
+    <tr>
+        <th>3</th>
+            <th>00:04:58</th> <th>15</th> <th>86</th>
+            <th>00:12:54</th> <th>140</th> <th>0</th>
+    </tr>
+    <tr>
+        <th>4</th>
+            <th>00:02:52</th> <th>102</th> <th>0</th>
+            <th>00:07:21</th> <th>111</th> <th>0</th>
+    </tr>
+    <tr>
+        <th>5</th>
+            <th>00:07:25</th> <th>77</th> <th>24</th>
+            <th>00:16:02</th> <th>12</th> <th>89</th>
+    </tr>
+    <tr>
+        <th>6</th>
+            <th>00:06:51</th> <th>1191</th> <th>0</th>
+            <th>00:10:00</th> <th>1128</th> <th>0</th>
+    </tr>
+</table>
