@@ -17,9 +17,9 @@ a = -1
 b = time
 c = -distance
 
-delta = b * b - 4 * a * c
+delta = b*b - 4*a*c
 x1 = (-b - isqrt(delta)) // (2*a)
 x2 = (-b + isqrt(delta)) // (2*a)
-# All hold time between x1 and x2 will beat the record
+# All hold time between x2 and x1 will beat the record
 
 submit(x1 - x2, 2, 6, 2023)
