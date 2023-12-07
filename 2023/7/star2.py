@@ -34,27 +34,17 @@ def score(cards):
     This function can be used as a sorting key to sort hands based on strength
     """
 
-    def best_kind(replacement, i = 0):
-        if i >= 5:
-            counter = list(sorted(Counter(replacement).values()))
-            kind = strength.index(counter)
-            return kind
+    best_kind = 0
+    for replacement in order[1:]:
+        # An optimal replacement is always to replace ALL jacks with the
+        # same card
+        hand = cards.replace('J', replacement)
+        counter = list(sorted(Counter(hand).values()))
+        kind = strength.index(counter)
+        best_kind = max(kind, best_kind)
 
-        elif replacement[i] == 'J':
-            kind = 0
-            for card in order[1:]:
-                replacement[i] = card
-                kind = max(kind, best_kind(replacement, i + 1))
-
-            replacement[i] = 'J'
-            return kind
-
-        else:
-            return best_kind(replacement, i + 1)
-
-    kind = best_kind(list(cards))
     relative = tuple(order.index(x) for x in cards)
-    return (kind, relative)
+    return (best_kind, relative)
 
 
 # Reading Input
