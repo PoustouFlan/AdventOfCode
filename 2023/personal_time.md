@@ -44,4 +44,9 @@
             <th>00:10:09</th> <th>106</th> <th>0</th>
             <th>00:18:18</th> <th>169</th> <th>0</th>
     </tr>
+    <tr>
+        <th><a href="https://adventofcode.com/2023/day/8">8</a></th>
+            <th>00:03:28</th> <th>97</th> <th>4</th>
+            <th>00:06:38</th> <th>15</th> <th>86</th>
+    </tr>
 </table>
