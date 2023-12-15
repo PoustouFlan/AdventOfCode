@@ -79,4 +79,9 @@
             <th>00:07:01</th> <th>527</th> <th>0</th>
             <th>00:32:02</th> <th>709</th> <th>0</th>
     </tr>
+    <tr>
+        <th><a href="https://adventofcode.com/2023/day/15">15</a></th>
+            <th>00:03:09</th> <th>393</th> <th>0</th>
+            <th>00:13:07</th> <th>214</th> <th>0</th>
+    </tr>
 </table>
