@@ -84,4 +84,9 @@
             <th>00:03:09</th> <th>393</th> <th>0</th>
             <th>00:13:07</th> <th>214</th> <th>0</th>
     </tr>
+    <tr>
+        <th><a href="https://adventofcode.com/2023/day/16">16</a></th>
+            <th>00:11:03</th> <th>82</th> <th>19</th>
+            <th>00:13:42</th> <th>64</th> <th>37</th>
+    </tr>
 </table>
