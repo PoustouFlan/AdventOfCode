@@ -116,4 +116,4 @@ for (start_x, start_y), start_direction in starters:
 
     max_energized = max(max_energized, energized)
 
-submit(max_energized)
+submit(max_energized, 2, 2023, 16)
