@@ -72,7 +72,7 @@
     <tr>
         <th><a href="https://adventofcode.com/2023/day/13">13</a></th>
             <th>00:13:25</th> <th>365</th> <th>0</th>
-            <th>00:16:28</th> <th>200</th> <th>4</th>
+            <th>00:16:28</th> <th>200</th> <th>0</th>
     </tr>
     <tr>
         <th><a href="https://adventofcode.com/2023/day/14">14</a></th>
@@ -88,5 +88,10 @@
         <th><a href="https://adventofcode.com/2023/day/16">16</a></th>
             <th>00:11:03</th> <th>82</th> <th>19</th>
             <th>00:13:42</th> <th>64</th> <th>37</th>
+    </tr>
+    <tr>
+        <th><a href="https://adventofcode.com/2023/day/17">17</a></th>
+            <th>00:29:42</th> <th>708</th> <th>0</th>
+            <th>00:32:08</th> <th>469</th> <th>0</th>
     </tr>
 </table>
